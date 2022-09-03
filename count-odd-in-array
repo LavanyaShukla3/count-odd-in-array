@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner scn = new Scanner(System.in);
+       int n = scn.nextInt();
+       int numbers[] = new int[n];
+       int oddCount = 0;
+       int evenCount = 0;
+       for(int i =1; i<n; i++){
+           numbers[i] = scn.nextInt();
+       }
+       
+        for(int i =1; i<n; i++)
+        
+            if(numbers[i] % 2 == 0)
+            evenCount ++;
+            
+        else
+            oddCount++;
+         
+        System.out.println("The number of even " + evenCount);
+        System.out.println("The number of odd " + oddCount);
+            
+    }
+}
